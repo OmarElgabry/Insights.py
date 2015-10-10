@@ -39,8 +39,8 @@ Database class acts like a wrapper SQLite. It provides variety of methods that h
  
 .. sourcecode:: python
 
-	import insights
-	db = insights.database.Database()
+    import insights
+    db = insights.database.Database()
     d = dict(
              id     = dict(type='INTEGER', auto = True, primary = True),
              name   = dict(type='TEXT', not_null = True),
@@ -84,8 +84,9 @@ Statistics
 Stats class for performing some simple statistics on a list of values. 
 
 .. sourcecode:: python
-	import insights
-	lst     = [6, 3 , 11 , 16 , 8 , 6 , 15 , 7]
+
+    import insights
+    lst     = [6, 3 , 11 , 16 , 8 , 6 , 15 , 7]
     Stats   = insights.stats.Stats
     
     print("Average\t", Stats.average(lst))   
