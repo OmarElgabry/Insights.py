@@ -13,6 +13,7 @@ It provides modules for reading & parsing data from URL, storing data using a wr
 Index
 ======================
 
++ `Installation`_
 + `Web Data`_
 + `SQLite Database`_
 + `Statistics`_
@@ -20,6 +21,12 @@ Index
 + `Support`_
 + `Contribute`_
 + `License`_
+
+Installation
+======================
+Download and unzip the package then run the following command::
+
+	python setup.py install
 
 Web Data
 ======================
