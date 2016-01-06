@@ -27,7 +27,7 @@ class Database(metaclass=Singleton):
         Constructor method.
             filename is a string for the database file, defaults is in memory.
         """
-        __class__.filename          = kwargs.get('filename', ':memory:')
+        __class__._filename         = kwargs.get('filename', ':memory:')
         self._result                = None
         self._database              = sqlite3.connect(__class__._filename)
         self._database.row_factory  = sqlite3.Row
